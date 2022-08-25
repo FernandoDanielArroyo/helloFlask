@@ -18,9 +18,4 @@ def about():
 def form ():
 	return render_template('form.html')
 
-app.run(debug=True)
-
-# import de l’objet Flask
-# instantiation application
-# association d’une route (URL) avec la fonction ‘home()’ et on renvoie une chaîne de caractères
-# démarrage de l’application
+app.run(debug=True, host='0.0.0.0')
